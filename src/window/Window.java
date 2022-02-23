@@ -71,7 +71,7 @@ public abstract class Window extends Canvas{
 	public void display() {
 		frame.add(this);
 		frame.pack();
-		frame.setSize(width, height + frame.getInsets().top);
+		frame.setSize(width + frame.getInsets().left + frame.getInsets().right, height + frame.getInsets().top + frame.getInsets().bottom);
 		frame.setTitle(title);
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
